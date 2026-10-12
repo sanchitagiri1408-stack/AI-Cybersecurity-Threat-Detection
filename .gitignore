@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Dataset files (download separately; check dataset terms)
+data/raw/*
+!data/raw/.gitkeep
+
+
+# Include trained model and evaluation results
+!models/
+models/*
+!models/logistic_regression_model.joblib
+
+!outputs/
+outputs/*
+!outputs/evaluation_metrics.json
+!outputs/test_predictions.csv
+
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+
+# Python virtual environments
+.venv/
+.venv312/
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Local secrets
+.env
+.env.*
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+
+# Keep duplicate dataset copies out of the repository root
+/UNSW_NB15_training-set.csv
+/UNSW_NB15_testing-set.csv
+
+# Dataset files are available separately; don't upload raw datasets
+data/raw/*.csv
+
